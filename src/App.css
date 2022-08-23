@@ -48,6 +48,7 @@ h4 {
 }
 .btn1:hover {
   background-color: #1b4f84 !important;
+  color: white !important;
 }
 .btn2 {
   font-size: 18px;
