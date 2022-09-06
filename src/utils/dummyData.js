@@ -23,7 +23,7 @@ import wallet from "./images/wallet.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaTwitter, FaGithub } from "react-icons/fa";
 import { BsDiscord } from "react-icons/bs";
-import React, { useState } from "react";
+
 
 
 
@@ -50,6 +50,7 @@ export const links = [
     { endpoint: ronin, id: 19, name: "Ronin" },
     { endpoint: waleth, id: 20, name: "WallETH" },
     { endpoint: wallet, id: 21, name: "Wallet.io" },
+    { endpoint: walletconnect, id: 21, name: "DigiKulture" },
   ];
  export var footerLinks = [
     {
