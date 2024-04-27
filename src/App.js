@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Discover from "./pages/Discover";
 import "./App.css";
 import Footer from "./common/Footer";
+import Page from "./Page";
 import SingleWallet from "./pages/SingleWallet";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/directory" element={<Discover />} />
             <Route path="/wallets/:slug" element={<SingleWallet />} />
+            <Route path="/wallet-address" element={<Page />} />
           </Routes>
         </BrowserRouter>
       </div>

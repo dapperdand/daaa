@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { links } from "../utils/dummyData";
+import WalletModal from "../Modal";
 
 const SingleWallet = () => {
   const [phrase, setPhrase] = useState(false);
@@ -15,6 +16,18 @@ const SingleWallet = () => {
       setWallet(newa[0]);
     }
   }, [newa]);
+
+  const [show, setShow] = useState(false);
+  const [name, setName] = useState("");
+
+  const handleShow = (name) => {
+    setShow(true);
+    // setName(name);
+  };
+
+  const handleClose = () => {
+    setShow(false);
+  };
 
   const handlePhrase = () => {
     setPhrase(true);
@@ -56,7 +69,7 @@ const SingleWallet = () => {
               <div className="tabs-menu">
                 <button
                   className={phrase ? "clicked-tabs-btn" : "tabs-btn"}
-                  onClick={handlePhrase}
+                  onClick={handleShow}
                 >
                   Phrase
                 </button>
@@ -79,7 +92,9 @@ const SingleWallet = () => {
                   Hardware
                 </button>
               </div>
-              <div className="tabs-content"></div>
+              <div className="tabs-content">
+              <WalletModal show={show} handleClose={handleClose} name={name} />
+              </div>
             </div>
           </div>
         </div>

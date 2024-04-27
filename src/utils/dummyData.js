@@ -20,6 +20,15 @@ import ronin from "./images/ronin.png";
 import waleth from "./images/waleth.jpg";
 import rabby from "./images/rabby.jpg";
 import wallet from "./images/wallet.jpg";
+import inch from "./images/1inchewallet.jpg";
+import binancesmart from "./images/binancesmartchain.jpg";
+import honeyswap from "./images/honeyswap.jpg";
+import lido from "./images/lido.png";
+import mintbase from "./images/mintbase.jpg";
+import rainbow from "./images/rainbow.jpg";
+import thorchain from "./images/thorchain.jpg";
+import uniswap from "./images/uniswap.jpg";
+import zapper from "./images/zapper.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaTwitter, FaGithub } from "react-icons/fa";
 import { BsDiscord } from "react-icons/bs";
@@ -50,8 +59,24 @@ export const links = [
     { endpoint: ronin, id: 19, name: "Ronin" },
     { endpoint: waleth, id: 20, name: "WallETH" },
     { endpoint: wallet, id: 21, name: "Wallet.io" },
-    { endpoint: walletconnect, id: 21, name: "DigiKulture" },
+    { endpoint: walletconnect, id: 22, name: "DigiKulture" },
+    { endpoint: rainbow, id: 23, name: "Rainbow wallet" },
+    { endpoint: binancesmart, id: 24, name: "Binance smart chain" },
+    { endpoint: walletconnect, id: 25, name: "Dollar wallet " },
+    { endpoint: uniswap, id: 26, name: "Uniswap" },
+    { endpoint: inch, id: 27, name: "1inche wallet" },
+    { endpoint: thorchain, id: 28, name: "Thor chain" },
+    { endpoint: zapper, id: 29, name: "Zapper" },
+    { endpoint: honeyswap, id: 30, name: "Honey swap" },
+    { endpoint: walletconnect, id: 31, name: "Kubepay wallet " },
+    { endpoint: walletconnect, id: 32, name: "KuCoin wallet " },
+    { endpoint: walletconnect, id: 33, name: "Okx wallet" },
+    { endpoint: lido, id: 34, name: "Lido" },
+    { endpoint: mintbase, id: 35, name: "Mintbase" },
+    { endpoint: walletconnect, id: 36, name: "Exodus wallet" },
+
   ];
+
  export var footerLinks = [
     {
       network: "Discord",
